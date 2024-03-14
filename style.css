@@ -20,14 +20,12 @@
 /* INIZIO MAIN */
 main {
     height: 90%;
-    background-color: aqua;
 }
 
 .container {
     width: 1800px;
     height: 100%;
     padding: 1rem;
-    background-color: yellow;
     flex-wrap: wrap;
     justify-content: space-around;
 
@@ -36,7 +34,6 @@ main {
 .card {
     width: calc(100% / 7 - 0.5rem);
     height: calc(100% / 5 - 1rem);
-    background-color: blue;
     position: relative;
     
 }
@@ -50,10 +47,12 @@ img {
 
 .name {
     padding: 0.5rem;
-    background-color: orangered;
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 0.7em;
 }
 /* FINE MAIN */
 
@@ -72,20 +71,19 @@ footer {
 
 }
 footer section {
-    background-color: red;
+
     padding: 1rem;
     height: 100%;
     
 }
 
 .left-footer {
-    position: relative;
-    align-items: flex-start;
-
+   
 }
 
 
 .center-footer {
+    justify-content: space-between;
 
 }
 
@@ -94,10 +92,15 @@ footer section {
     color: red;
 }
 
-.left-footer > div {
-    font-size: 1.5em;
-    
+.fa-microphone, .fa-video {
+    font-size: 1.8em;
+}
 
+.microphone-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem;
+    
 }
 
 .right-footer > div {
@@ -107,9 +110,12 @@ footer section {
 }
 
 span {
-    position: absolute;
-    left: 30%;
-    bottom: 5%;
-    font-size: 0.4em;
+    margin-top: 10px;
+    font-size: 1em;
     color: white;
+}
+
+.arrow {
+    margin: 0 1rem;
+    font-size: 0.5rem;
 }
